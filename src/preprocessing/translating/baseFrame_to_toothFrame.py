@@ -4,7 +4,7 @@ import glob
 import os
 
 # Define paths to the directories and files
-candidate = "van_riet"
+candidate = "noorlag"
 data_directory = rf'C:\Users\wille\OneDrive\Documenten\Tu Delft\Msc, Robotics\Afstuderen\AMC\Coding\thesis\descriptive_tooth_extraction\data\raw\{candidate}'
 tooth_data_path = r'C:\Users\wille\OneDrive\Documenten\Tu Delft\Msc, Robotics\Afstuderen\AMC\Coding\thesis\descriptive_tooth_extraction\src\geometry\teeth_data.json'
 output_directory = r'C:\Users\wille\OneDrive\Documenten\Tu Delft\Msc, Robotics\Afstuderen\AMC\Coding\thesis\descriptive_tooth_extraction\data\translated'

@@ -14,7 +14,7 @@ def load_data_from_json(relative_path):
     with open(file_path, 'r') as file:
         data = json.load(file)
 
-        print(data['tooth'])
+
 
         raw_forces = [data['translated_forces_x'], data['translated_forces_y'], data['translated_forces_z']]
         raw_torques = [data['translated_torques_x'], data['translated_torques_y'], data['translated_torques_z']]
@@ -71,8 +71,23 @@ def plot_data(sensor_data, distribution=False, graph=False):
         plt.tight_layout()
         plt.show()
 
-# Example usage
-# Update this relative path to the actual data file you want to use.
-relative_path = 'translated_sensordata.json'
+
+
+#plot noorlag data
+# relative_path = 'data/filtered/noorlag/translated_sensordata_2024-04-18T16;36;37-25.json'
+# relative_path = 'data/translated/noorlag/translated_sensordata_2024-04-18T16;36;37-25.json'
+relative_path = 'data/cutted/noorlag/translated_sensordata_2024-04-18T16;36;22-26.json'
+
+
+
+#plot van_riet data
+#relative_path = 'data/filtered/van_riet/translated_sensordata_2024-04-18T16;39;08-18.json'
+#relative_path = 'data/translated/van_riet/translated_sensordata_2024-04-18T16;39;08-18.json'
+relative_path = 'data/cutted/van_riet/translated_sensordata_2024-04-18T16;39;53-16.json'
+
+
+
 sensor_data = load_data_from_json(relative_path)
 plot_data(sensor_data, distribution=True, graph=True)
+
+
